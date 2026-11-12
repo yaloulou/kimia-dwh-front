@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('/fonts/source-sans-3-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('/fonts/pt-serif-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  color: #27352e;
+  background: #fbfaf7;
+
+  --ink: #27352e;
+  --muted: #505b53;
+  --accent: #2e5947;
+  --line: #d7ded5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus-visible {
+  outline: 2px solid #357857;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
+
