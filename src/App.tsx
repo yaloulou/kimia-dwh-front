@@ -134,8 +134,8 @@ function App() {
           </div>
           <figure className="hero-figure">
             <img src={landscapeUrl} alt="" width="1448" height="1086" fetchPriority="high" />
-            <figcaption className="page-width">Illustration inspirée du fleuve Congo, près de Kinshasa.</figcaption>
-          </figure>
+{/*             <figcaption className="page-width">Illustration inspirée du fleuve Congo, près de Kinshasa.</figcaption>
+ */}          </figure>
         </section>
 
         <section className="page-width themes-section" id="thematiques" aria-labelledby="themes-title">
