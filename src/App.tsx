@@ -41,19 +41,19 @@ const themes = [
     icon: 'activity',
     color: 'amber',
     title: 'Maladies tropicales négligées',
-    description: 'Surveillance, répartition et interventions de lutte contre les MTN.',
+    description: 'Données d’études sur la répartition de ces maladies et l’évaluation des interventions de lutte.',
   },
   {
     icon: 'people',
     color: 'blue',
     title: 'Démographie',
-    description: 'Recensements, structure de la population et projections démographiques.',
+    description: 'Données d’enquêtes sur la composition des ménages, la fécondité et la mortalité.',
   },
   {
     icon: 'hospital',
     color: 'green',
     title: 'Systèmes de santé',
-    description: 'Accès aux soins, offre de services et indicateurs des établissements de santé.',
+    description: 'Données d’études sur l’accès aux soins, le recours aux services et le fonctionnement des établissements de santé.',
   },
 ] as const
 
@@ -61,17 +61,17 @@ const features = [
   {
     icon: 'search',
     title: 'Recherche par mot-clé',
-    description: 'Retrouvez un jeu de données à partir de son nom ou d’un mot-clé.',
+    description: 'Retrouvez un jeu de données par son nom ou par un mot-clé lié à l’étude.',
   },
   {
     icon: 'folders',
     title: 'Navigation par catégorie',
-    description: 'Parcourez le catalogue selon votre domaine de recherche.',
+    description: 'Repérez les jeux de données liés à votre question de recherche.',
   },
   {
     icon: 'table',
     title: 'Aperçu des données',
-    description: 'Consultez les colonnes et un échantillon des lignes avant de télécharger.',
+    description: 'Examinez les variables et quelques lignes pour voir si les données répondent à votre question.',
   },
   {
     icon: 'download',
@@ -86,7 +86,7 @@ const features = [
   {
     icon: 'provenance',
     title: 'Provenance des données',
-    description: 'Identifiez les sources et consultez les étapes de traitement.',
+    description: 'Identifiez l’étude d’origine et consultez les méthodes de collecte et de traitement documentées.',
   },
 ] as const
 
@@ -121,11 +121,11 @@ function App() {
       <main id="contenu">
         <section aria-labelledby="hero-title">
           <div className="page-width hero-intro">
-            <h1 id="hero-title">Les données de santé, à portée de recherche.</h1>
+            <h1 id="hero-title">Les données de recherche de la KSPH</h1>
             <div className="hero-summary">
               <p>
-                L’entrepôt de la Kinshasa School of Public Health réunit des données pour la recherche,
-                la modélisation et la prise de décision en santé publique.
+                KIMIA est l’entrepôt des jeux de données issus des études de la Kinshasa School of Public Health.
+                Il a pour objectif de faciliter leur réutilisation pour de nouvelles analyses en santé publique.
               </p>
               <a className="hero-link" href="#thematiques">
                 Explorer les thématiques <Icon name="arrow" size={18} />
@@ -139,8 +139,8 @@ function App() {
         </section>
 
         <section className="page-width themes-section" id="thematiques" aria-labelledby="themes-title">
-          <h2 id="themes-title">Explorer par thématique</h2>
-          <p className="section-description">Exemples de catégories du catalogue de santé publique.</p>
+          <h2 id="themes-title">Thématiques de recherche</h2>
+          <p className="section-description">Exemples de thématiques pour parcourir les jeux de données.</p>
           <ul className="themes-grid">
             {themes.map(({ icon, color, title, description }) => (
               <li className="theme" key={icon}>
@@ -154,7 +154,7 @@ function App() {
 
         <section className="features-section" id="fonctionnalites" aria-labelledby="features-title">
           <div className="page-width">
-            <h2 id="features-title">Du catalogue à l’analyse</h2>
+            <h2 id="features-title">Trouver et réutiliser les données</h2>
             <ul className="features-grid">
               {features.map(({ icon, title, description }) => (
                 <li className="feature" key={icon}>
