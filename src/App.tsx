@@ -121,11 +121,13 @@ function App() {
       <main id="contenu">
         <section aria-labelledby="hero-title">
           <div className="page-width hero-intro">
-            <h1 id="hero-title">Les données de recherche de la KSPH</h1>
+            <h1 id="hero-title">Les jeux de données de recherche de la KSPH</h1>
             <div className="hero-summary">
               <p>
-                KIMIA est l’entrepôt des jeux de données issus des études de la Kinshasa School of Public Health.
-                Il a pour objectif de faciliter leur réutilisation pour de nouvelles analyses en santé publique.
+                KIMIA rassemble les jeux de données issus des études de la Kinshasa School of Public Health.
+                Recherchez-les par nom d’étude, par mot-clé ou par thématique. Consultez un aperçu et vérifiez
+                comment les données ont été recueillies et traitées avant de les réutiliser dans vos analyses
+                de santé publique.
               </p>
               <a className="hero-link" href="#thematiques">
                 Explorer les thématiques <Icon name="arrow" size={18} />
