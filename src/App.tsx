@@ -3,6 +3,7 @@ import './App.css'
 
 const loginUrl = import.meta.env.VITE_LOGIN_URL?.trim() || '/login'
 const logoUrl = `${import.meta.env.BASE_URL}kimia-logo.png`
+const ksphLogoUrl = `${import.meta.env.BASE_URL}ksph-logo.png`
 const landscapeUrl = `${import.meta.env.BASE_URL}kimia-territoire.jpg`
 
 const iconPaths = {
@@ -92,13 +93,18 @@ const features = [
 
 function Brand() {
   return (
-    <a className="brand" href="#accueil" aria-label="KIMIA Data Warehouse, accueil">
-      <img src={logoUrl} width="40" height="40" alt="" />
-      <span className="brand-text">
-        <strong>KIMIA</strong>
-        <span>Data Warehouse</span>
+    <div className="site-logos">
+      <a className="brand" href="#accueil" aria-label="KIMIA Data Warehouse, accueil">
+        <img src={logoUrl} width="40" height="40" alt="" />
+        <span className="brand-text">
+          <strong>KIMIA</strong>
+          <span>Data Warehouse</span>
+        </span>
+      </a>
+      <span className="ksph-brand">
+        <img src={ksphLogoUrl} width="34" height="42" alt="École de santé publique de l’Université de Kinshasa (KSPH)" />
       </span>
-    </a>
+    </div>
   )
 }
 

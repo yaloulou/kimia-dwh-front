@@ -31,6 +31,26 @@
   min-height: 72px;
 }
 
+.site-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.ksph-brand {
+  flex: none;
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
+
+.ksph-brand img {
+  display: block;
+  width: 34px;
+  height: 42px;
+  object-fit: contain;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -371,6 +391,19 @@ main h2 {
 }
 
 @media (max-width: 480px) {
+  .site-logos {
+    gap: 8px;
+  }
+
+  .ksph-brand {
+    padding-left: 8px;
+  }
+
+  .ksph-brand img {
+    width: 28px;
+    height: 35px;
+  }
+
   .brand {
     gap: 7px;
   }
